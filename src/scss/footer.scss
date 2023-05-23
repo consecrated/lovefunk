@@ -119,4 +119,11 @@ footer.footer div.wrap-footer div.right-footer div.partners > ul.pa-mobile {
         justify-content: center;
         margin-top: 30px;
     }
+
+    footer.footer div.wrap-footer div.right-footer div.partners > ul.pa-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    } 
 }
