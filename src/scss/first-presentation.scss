@@ -1,5 +1,5 @@
 section.first-presentation {
-    background-image: url("/img/bg-ele-fim.png");
+    background-image: url("../img/bg-ele-fim.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0 30px 0;
@@ -64,7 +64,7 @@ section.first-presentation {
     }
 
     &.second {
-        background-image: url("/img/bg-ela-fim.png");
+        background-image: url("../img/bg-ela-fim.png");
      
         div.wrap-first-presentation {
             margin-left: auto;
