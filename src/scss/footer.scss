@@ -66,12 +66,13 @@ footer.footer {
     }
 }
 
-
-@media (min-width: 992px) {
-    footer.footer div.wrap-footer div.right-footer div.partners > ul.pa-mobile {
-        display: none;
-    }
+footer.footer div.wrap-footer div.right-footer div.partners > ul.pa-mobile {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
+
+
 
 @media (max-width: 992px) {
     footer.footer div.wrap-footer {
