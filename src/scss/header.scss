@@ -3,7 +3,7 @@ header.header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 15px;
+    padding: 36px 15px;
 
     nav.navigation {
         width: 100%;
@@ -19,7 +19,7 @@ header.header {
             li {
 
                 a {
-                    font-size: em(32);
+                    font-size: em(26);
                     color: $primary-color;
                 }
             }
@@ -62,7 +62,9 @@ header.header {
                     gap: 5px;
 
                     img {
-                        width: 100%;
+                        // width: 100%;
+                        width: 44px;
+                        height: 36px;
                     }
 
                     span {

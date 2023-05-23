@@ -1,0 +1,116 @@
+
+
+footer.footer {
+    background-color: #000;
+    border-top: 1px solid #FFFFFF;
+    padding: 40px 0;
+
+    div.wrap-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        div.left-footer {
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            div.institutional {
+                
+                ul {
+                    list-style-type: none;
+                    li {
+                        a {
+                            color: $primary-color;
+                            @include font-secondary;
+                            font-size: em(15);
+                        }
+                    }
+                }
+            }
+        }
+
+        div.right-footer {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            div.partners {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-bottom: 20px;
+                img {
+                    height: 50px;
+                }
+            }
+
+            div.copy {
+                text-align: right;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: flex-end;
+
+                span {
+                    font-size: em(12);
+                    color: $primary-color;
+                    @include font-secondary;
+                }
+            }
+
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    footer.footer div.wrap-footer div.right-footer div.partners > ul.pa-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    footer.footer div.wrap-footer {
+        display: flex;
+        flex-direction: column;
+
+        div.left-footer {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    footer.footer div.wrap-footer div.left-footer,
+    footer.footer div.wrap-footer div.right-footer {
+        width: 100%;
+    }
+
+    html .institutional {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    div.flags {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    footer.footer div.wrap-footer div.right-footer div.partners > img{
+        display: none;
+    }
+
+    footer.footer div.wrap-footer div.right-footer div.partners > ul {
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer.footer div.wrap-footer div.right-footer div.copy {
+        justify-content: center;
+        margin-top: 30px;
+    }
+}

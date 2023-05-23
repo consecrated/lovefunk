@@ -1,7 +1,11 @@
 section.main-highlight {
    
-    background: #13120D;
+    // background: #13120D;
+    background-image: url("/img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: -215px;
+    background-position: bottom;
 
     div.wrap-highlight {
         height: 100vh;
@@ -35,7 +39,7 @@ section.main-highlight {
 
                 div.highlight-info {
                     h2 {
-                        font-size: em(56);
+                        font-size: em(42);
                         color: $primary-color;
                         margin-bottom: 30px;
                     }
@@ -95,6 +99,7 @@ section.main-highlight {
                             margin-left: -120px;
                             width: calc(100% + 120px);
                             text-align: right;
+                            font-weight: bold;
                         } 
 
                         a.info-view {
@@ -130,6 +135,12 @@ div.buy-even {
         -webkit-border-radius: 7px;
         border-radius: 7px;
         font-size: em(20);
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    section.main-highlight div.wrap-highlight div.featured-products div.item-highlight div.highlight-info h2 {
+        font-size: em(36);
     }
 }
 
@@ -192,7 +203,7 @@ div.buy-even {
 
     section.main-highlight div.wrap-highlight div.featured-products div.item-highlight div.highlight-info h2 {
         width: 100%;
-        font-size: em(46);
+        font-size: em(36);
         text-align: left;
         margin-left: 25px;
         margin-bottom: 15px;

@@ -1,0 +1,83 @@
+div.newsletter {
+    background-color: #000;
+    padding: 40px 0;
+
+    div.wrap-newsletter {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        align-items: center;
+
+        div.title-ns {
+            text-align: center;
+            strong {
+                color: $primary-color;
+                font-size: em(32);
+            }
+        }
+
+        div.register-ns {
+            form {
+                display: flex;
+                gap: 15px;
+                input[type="email"] {
+                    width: 70%;
+                    height: 50px;
+                    outline: 0;
+                    font-size: em(14);
+                    @include font-secondary;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                input[type="button"] {
+                    width: 30%;
+                    height: 50px;
+                    background: $button-color;
+                    border: none;
+                    border-radius: 3px;
+                    color: $primary-color;
+                    @include font-secondary;
+                    font-weight: bold;
+                    font-size: em(16);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    div.newsletter {
+        padding: 60px 0;
+    }
+
+    div.newsletter div.wrap-newsletter div.title-ns strong {
+        font-size: em(26);
+    }
+
+    div.newsletter div.wrap-newsletter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.newsletter div.wrap-newsletter div.register-ns form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.newsletter div.wrap-newsletter div.register-ns form input[type=email] {
+        width: 100%;
+    }
+
+    div.newsletter div.wrap-newsletter div.register-ns form input[type=button]{
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    html .register-ns {
+        width: 100%;
+        // margin: 0 40px;
+        padding: 0 30px;
+        margin-top: 15px;
+    }
+}
