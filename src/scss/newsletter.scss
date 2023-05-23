@@ -51,6 +51,12 @@ div.newsletter {
     }
 }
 
+
+div.newsletter div.wrap-newsletter div.register-ns form input[type=email] {
+    border-radius: 3px;
+    border: none;
+}
+
 @media (max-width: 992px) {
 
     div.newsletter {
