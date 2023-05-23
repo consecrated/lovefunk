@@ -1,0 +1,161 @@
+header.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 15px;
+
+    nav.navigation {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+
+            li {
+
+                a {
+                    font-size: em(32);
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    div.logo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+            display: block;
+
+            img {
+                height: 130px;
+            }
+        }
+    }
+
+    div.access {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            
+
+            > li {
+
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    span {
+                        text-align: center;
+                        @include font-secondary;
+                        font-size: em(15);
+                        color: $primary-color;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : 992px) { 
+    header.header {
+        
+
+        nav.navigation {
+
+            div.hamburger {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : 768px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+    header.header {
+        padding: 20px 15px;
+        nav.navigation {
+
+            div.hamburger {
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    
+                    span {
+                        @include font-secondary;
+                        text-align: center;
+                    }
+                }
+            }
+
+            ul {
+                display: none;
+            }
+        }
+
+        div.access {
+            ul {
+                gap: 15px;
+            }
+        }
+    }
+
+    header.header div.access ul>li a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    header.header nav.navigation div.hamburger a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    header.header nav.navigation div.hamburger a,
+    header.header div.access ul>li a {
+        align-items: center;
+
+        span {
+            font-size: em(12);
+        }
+    }
+
+
+   
+}
+
+
+@media only screen and (max-width : 768px) {
+   
+}
+
+
+@media only screen and (max-width : 1200px) {
+  
+}
+
+
+

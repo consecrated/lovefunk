@@ -1,0 +1,10 @@
+// Configurações
+@import "settings";
+@import "standard";
+
+// Observação Importante: As importações listadas à baixo possui o mesmo nome das seções no HTML. Use-as para identifica-las.
+
+@import "header";
+@import "main-highlight";
+@import "first-presentation";
+@import "second-presentation";
