@@ -34,6 +34,11 @@ section.second-presentation {
                 border-radius: 7px;
                 font-size: em(20);
                 width: 50%;
+                transition: 0.2s ease-in-out;
+
+                &:hover {
+                    opacity: .9;
+                }
             
             }
         }

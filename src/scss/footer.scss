@@ -23,6 +23,10 @@ footer.footer {
                             color: $primary-color;
                             @include font-secondary;
                             font-size: em(15);
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
@@ -107,6 +111,7 @@ footer.footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
 
     footer.footer div.wrap-footer div.right-footer div.copy {

@@ -60,6 +60,11 @@ section.main-highlight {
                     padding: 20px 40px;
                     text-transform: uppercase;
                     color: $primary-color;
+                    transition: 0.2s ease-in-out;
+
+                    &:hover {
+                        opacity: .9;
+                    }
                 }
 
                 a.info-view {
@@ -67,6 +72,10 @@ section.main-highlight {
                     text-transform: lowercase;
                     color: $primary-color;
                     font-weight: 600;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
 
                 &.highlight-left {
@@ -100,6 +109,9 @@ section.main-highlight {
                             width: calc(100% + 120px);
                             text-align: right;
                             font-weight: bold;
+                            
+
+                            
                         } 
 
                         a.info-view {
@@ -135,6 +147,11 @@ div.buy-even {
         -webkit-border-radius: 7px;
         border-radius: 7px;
         font-size: em(20);
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            opacity: .9;
+        }
     }
 }
 
@@ -259,6 +276,9 @@ div.buy-even {
         margin-top: -150px;
     }
 
+    section.main-highlight {
+        overflow: hidden;
+    }
     
 }
 

@@ -1,1 +1,1 @@
-{"version":3,"file":"scripts.js","names":[],"sources":[],"mappings":""}
+{"version":3,"file":"scripts.js","names":["hamburger","document","querySelector","addEventListener","nextElementSibling","classList","toggle"],"sources":["scripts.js"],"mappings":"AAAA,MAAMA,UAAYC,SAASC,cAAc,2CACzCF,UAAUG,iBAAiB,SAAS,WAChBH,UAAUI,mBAClBC,UAAUC,OAAO,OAC7B"}

@@ -140,11 +140,47 @@ header.header {
     header.header div.access ul>li a {
         align-items: center;
 
+        
         span {
             font-size: em(12);
+            color: $primary-color;
         }
     }
 
+    header.header nav.navigation div.hamburger a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    header.header nav.navigation {
+        width: 65%;
+    }
+
+
+    header.header nav.navigation {
+        position: relative;
+    }
+
+    header.header nav.navigation ul {
+        position: absolute;
+        left: 0;
+        top: 50px;
+        background-color: #fff;
+        width: 50vw;
+        padding: 15px;
+        border-radius: 3px;
+        line-height: 2em;
+
+        &.show {
+            display: block;
+        }
+
+    }
+
+    header.header nav.navigation ul li a {
+        color: #000;
+        font-size: em(18);
+    }
 
    
 }

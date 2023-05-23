@@ -39,6 +39,12 @@ div.newsletter {
                     @include font-secondary;
                     font-weight: bold;
                     font-size: em(16);
+                    cursor: pointer;
+                    transition: 0.2s ease-in-out;
+
+                    &:hover {
+                        opacity: .9;
+                    }
                 }
             }
         }
