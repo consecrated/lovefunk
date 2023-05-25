@@ -1,15 +1,157 @@
 main.launch {
-    background-image: url("../img/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    height: 100vh;
+    
 
     section.main-launch {
+        background-image: url("../img/bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
 
         div.wrap-main-launch {
+            // width: 50%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
+            header {
+                display: flex;
+                flex-direction: row;
+                gap: 0px;
+                align-items: flex-end;
 
+                h1 {
+                    font-size: em(42);
+                    color: $primary-color;
+                    margin-bottom: 15px;
+                }
+            }
+
+            article {
+                width: 40%;
+                @include font-secondary;
+                margin: 20px 0 40px 0;
+                p {
+                    line-height: 1.3em;
+                    color: $primary-color;
+                    font-size: em(16);
+                }
+            }
+
+            div.bottom-form {
+                display: grid;
+                grid-template-columns: 40% 1fr;
+
+                form {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+    
+                    input {
+                        @include font-secondary;
+                        padding: 0 15px;
+                        border-radius: 3px;
+                        border: none;
+                        height: 50px;
+                        outline: 0;
+                        font-size: em(14);
+
+                        
+                    }
+
+                    div.btn-vip {
+                        position: relative;
+                        input[type="button"] {
+                            width: 100%;
+                            @include font-secondary;
+                            background: #E83332;
+                            font-weight: bold;
+                            color: $primary-color;
+                            cursor: pointer;
+                            transition: 0.2s ease-in-out;
+
+                            &:hover {
+                                opacity: .8;
+                            }
+                        }
+
+                        > img {
+                            position: absolute;
+                            right: -25px;
+                            top: -30px;
+                            height: 100%;
+                            
+                        }
+                    }
+                }
+
+                
+
+                div.scent {
+                    img {
+                        height: 320px;
+                    }
+                }
+            }
         }
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    main.launch section.main-launch {
+        height: unset;
+    }
+
+    main.launch section.main-launch div.wrap-main-launch {
+        height: unset;
+    }
+
+    main.launch section.main-launch div.wrap-main-launch header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    main.launch section.main-launch div.wrap-main-launch article { 
+        width: 100%;
+    }
+    
+    main.launch section.main-launch div.wrap-main-launch div.bottom-form {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    main.launch section.main-launch div.wrap-main-launch div.bottom-form form {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    
+    main.launch section.main-launch div.wrap-main-launch header {
+        align-items: center;
+    }
+    
+    main.launch section.main-launch div.wrap-main-launch article p {
+        text-align: center;
+    }
+
+    html div.scent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 0 30px 0;
+
+        
+    }
+
+    main.launch section.main-launch div.wrap-main-launch div.bottom-form div.scent img {
+        height: 250px;
+    }
+
+    main.launch section.main-launch div.wrap-main-launch div.bottom-form form div.btn-vip>img {
+        display: none;
     }
 }
