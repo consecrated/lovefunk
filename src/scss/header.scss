@@ -21,6 +21,11 @@ header.header {
                 a {
                     font-size: em(26);
                     color: $primary-color;
+                    transition: 0.2s ease-in-out;
+
+                    &:hover {
+                        color: #FF0020;
+                    }
                 }
             }
         }
@@ -95,6 +100,7 @@ header.header {
 
 header.header div.access ul>li a {
     align-items: center;
+
 }
 
 header.header div.access ul>li.bag a img {
